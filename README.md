@@ -1,144 +1,89 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Checklist</title>
-</head>
-<body>
-    <h1>Project Checklist</h1>
+# Project Checklist
 
-    <h2>First Class: Position</h2>
-    <ul>
-        <li>Class Position [public]</li>
-        <li>OOP Topics:
-            <ul>
-                <li>Encapsulation</li>
-                <li>Constructors</li>
-                <li>ToString (Object / overriding)</li>
-            </ul>
-        </li>
-    </ul>
+## First Class: Position
+- Class Position [public]
+- OOP Topics:
+  - Encapsulation
+  - Constructors
+  - ToString (Object / overriding)
 
-    <h2>Starting to implement Board and Piece</h2>
-    <ul>
-        <li>Classes Piece, Board [public]</li>
-        <li>OOP Topics:
-            <ul>
-                <li>Associations</li>
-                <li>Encapsulation / Access Modifiers</li>
-            </ul>
-        </li>
-        <li>Data Structures Topics:
-            <ul>
-                <li>Matrix</li>
-            </ul>
-        </li>
-    </ul>
+## Starting to implement Board and Piece
+- Classes Piece, Board [public]
+- OOP Topics:
+  - Associations
+  - Encapsulation / Access Modifiers
+- Data Structures Topics:
+  - Matrix
 
-    <h2>Chess layer and printing the board</h2>
-    <pre>
-8 - - - - - - - - 
-7 - - - - - - - - 
-6 - - - - - - - - 
-5 - - - - - - - - 
-4 - - - - - - - - 
-3 - - - - - - - - 
-2 - - - - - - - - 
-1 - - - - - - - - 
-a b c d e f g h
-    </pre>
-    <ul>
-        <li>Methods: Board.Piece(row, column) and Board.Piece(position)</li>
-        <li>Enum Chess.Color</li>
-        <li>Class Chess.ChessPiece [public]</li>
-        <li>Class Chess.ChessMatch [public]</li>
-        <li>Class ChessConsole.UI</li>
-        <li>OOP Topics:
-            <ul>
-                <li>Enumerations</li>
-                <li>Encapsulation / Access Modifiers</li>
-                <li>Inheritance</li>
-                <li>Downcasting</li>
-                <li>Static members</li>
-                <li>Layers pattern</li>
-            </ul>
-        </li>
-        <li>Data Structures Topics:
-            <ul>
-                <li>Matrix</li>
-            </ul>
-        </li>
-    </ul>
+## Chess layer and printing the board
+8 -  -  -  -  -  -  -  -  
+7 -  -  -  -  -  -  -  -  
+6 -  -  -  -  -  -  -  -  
+5 -  -  -  -  -  -  -  -  
+4 -  -  -  -  -  -  -  -  
+3 -  -  -  -  -  -  -  -  
+2 -  -  -  -  -  -  -  -  
+1 -  -  -  -  -  -  -  -  
+  a  b  c  d  e  f  g  h  
 
-    <h2>Placing pieces on the board</h2>
-    <ul>
-        <li>Method: Board.PlacePiece(piece, position)</li>
-        <li>Classes: Rook, King [public]</li>
-        <li>Method: ChessMatch.InitialSetup</li>
-        <li>OOP Topics:
-            <ul>
-                <li>Inheritance</li>
-                <li>Overriding</li>
-                <li>Polymorphism (ToString)</li>
-            </ul>
-        </li>
-    </ul>
+- Methods: `Board.Piece(row, column)` and `Board.Piece(position)`
+- Enum Chess.Color
+- Class Chess.ChessPiece [public]
+- Class Chess.ChessMatch [public]
+- Class ChessConsole.UI
+- OOP Topics:
+  - Enumerations
+  - Encapsulation / Access Modifiers
+  - Inheritance
+  - Downcasting
+  - Static members
+  - Layers pattern
+- Data Structures Topics:
+  - Matrix
 
-    <h2>BoardException and defensive programming</h2>
-    <ul>
-        <li>Class BoardException [public]</li>
-        <li>Methods: Board.PositionExists, Board.ThereIsAPiece</li>
-        <li>Implement defensive programming in Board methods</li>
-        <li>OOP Topics:
-            <ul>
-                <li>Exceptions</li>
-                <li>Constructors (a string must be informed to the exception)</li>
-            </ul>
-        </li>
-    </ul>
+## Placing pieces on the board
+- Method: `Board.PlacePiece(piece, position)`
+- Classes: Rook, King [public]
+- Method: `ChessMatch.InitialSetup`
+- OOP Topics:
+  - Inheritance
+  - Overriding
+  - Polymorphism (ToString)
 
-    <h2>ChessException and ChessPosition</h2>
-    <ul>
-        <li>Class ChessException [public]</li>
-        <li>Class ChessPosition [public]</li>
-        <li>Refactor ChessMatch.InitialSetup</li>
-        <li>OOP Topics:
-            <ul>
-                <li>Exceptions</li>
-                <li>Encapsulation</li>
-                <li>Constructors (a string must be informed to the exception)</li>
-                <li>Overriding</li>
-                <li>Static members</li>
-                <li>Layers pattern</li>
-            </ul>
-        </li>
-    </ul>
+## BoardException and defensive programming
+- Class BoardException [public]
+- Methods: `Board.PositionExists`, `Board.ThereIsAPiece`
+- Implement defensive programming in Board methods
+- OOP Topics:
+  - Exceptions
+  - Constructors (a string must be informed to the exception)
 
-    <h2>Little improvement in board printing</h2>
-    <ul>
-        <li>Place more pieces on the board</li>
-        <li>Distinguish piece colors in UI.PrintPiece method</li>
-    </ul>
+## ChessException and ChessPosition
+- Class ChessException [public]
+- Class ChessPosition [public]
+- Refactor `ChessMatch.InitialSetup`
+- OOP Topics:
+  - Exceptions
+  - Encapsulation
+  - Constructors (a string must be informed to the exception)
+  - Overriding
+  - Static members
+  - Layers pattern
 
-    <h2>Moving pieces</h2>
-    <ul>
-        <li>Method Board.RemovePiece</li>
-        <li>Method UI.ReadChessPosition</li>
-        <li>Method ChessMatch.PerformChessMove
-            <ul>
-                <li>Method ChessMatch.MakeMove</li>
-                <li>Method ChessMatch.ValidadeSourcePosition</li>
-            </ul>
-        </li>
-        <li>Write basic logic on Program.cs</li>
-        <li>OOP Topics:
-            <ul>
-                <li>Exceptions</li>
-                <li>Encapsulation</li>
-            </ul>
-        </li>
-    </ul>
-</body>
-</html>
+## Little improvement in board printing
+- Place more pieces on the board
+- Distinguish piece colors in `UI.PrintPiece` method
+
+## Moving pieces
+- Method `Board.RemovePiece`
+- Method `UI.ReadChessPosition`
+- Method `ChessMatch.PerformChessMove`
+  - Method `ChessMatch.MakeMove`
+  - Method `ChessMatch.ValidadeSourcePosition`
+- Write basic logic on Program.cs
+- OOP Topics:
+  - Exceptions
+  - Encapsulation
+ 
+
 
